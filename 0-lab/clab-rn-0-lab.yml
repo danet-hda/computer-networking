@@ -1,0 +1,24 @@
+# The containerlab topology file for the 0. lab exercise
+# computer networks, Prof. Stiemerling, CS, h_da
+
+name: rn-lab00
+
+topology:
+  kinds:
+    linux:
+      image: ghcr.io/danet-hda/computer-networking/winter2324-rn-lab0
+  nodes:
+    host00:
+      kind: linux
+      #startup-config: srl1.cfg
+    router00:
+      kind: linux
+      #startup-config: srl2.cfg
+    host01:
+      kind: linux
+      #startup-config: srl1.cfg
+
+  links:
+    - endpoints: ["host00:e1-1", "router00:e1-1"]
+    - endpoints: ["router00:e1-2", "host01:e1-1"]
+
