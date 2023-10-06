@@ -34,9 +34,13 @@ First of all, please bring your latop to the lab. If your laptop is not suitable
 ## Excercise 1: Getting Started
 
 - [ ] Boot the virtual machine, login to it, and change to the **0-lab** directory
-- [ ] start the containerlab environment with this command ````XXX  ```` and see if it as started without any error
-- [ ] execute the shell script ````./attach-clab.sh ````
+- [ ] start the containerlab environment with this command ````sudo containerlab deploy -t clab-rn-0-lab.yml```` and see if it as started without any error
+  - [ ] This command deploys the virtual network with containerlab
 - [ ] Ask the lab lecturer to check with you if everything is ready to go for the next exercises
+- [ ] execute the shell script ````./attach-clab.sh ````
+  - [ ] This command starts virtual terminals with the tmux tool allowing you to access the hosts and the router in the lab setup
+- [ ] If everything is ok you can run ````sudo containerlab destroy  -t clab-rn-0-lab.yml````
+  - [ ] This command tears the virtual network down
 
 ## Exercise 2: Using the virtalized Lab Environment
 
