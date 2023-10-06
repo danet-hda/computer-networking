@@ -12,7 +12,7 @@ Please check if your personal computer:
 
 *In case this is not the case, please contact your lecturer well before your lab appointment!*
 
-# Prepation Tasks to Do before getting to the Lab
+# Preparation Tasks to Do before getting to the Lab
 
 - [ ] Please [download]([url](https://cloud.h-da.de/s/7RxyR9jWDxJD7xS)https://cloud.h-da.de/s/7RxyR9jWDxJD7xS) the virtual machine ````ws234-rechnernetze-v01.ova```` for the lab before coming to your particular lab appointment!
 - [ ] Install the [latest version](https://www.virtualbox.org/) (by now 7.0.10) form virtualbox.org and follow the installation instructions to install virtualbox on your computer.
