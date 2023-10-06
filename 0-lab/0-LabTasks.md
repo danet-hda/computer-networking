@@ -1,4 +1,4 @@
-# 1. Lab in Computer Networks
+# 1st Lab in Computer Networks
 
 This lab has the goal to install the work environment and to get a first hands-on experience for the lab. 
 
@@ -14,7 +14,7 @@ Please check if your personal computer:
 
 # Preparation Tasks to Do before getting to the Lab
 
-- [ ] Please [download]([url](https://cloud.h-da.de/s/7RxyR9jWDxJD7xS)https://cloud.h-da.de/s/7RxyR9jWDxJD7xS) the virtual machine ````ws234-rechnernetze-v01.ova```` for the lab before coming to your particular lab appointment!
+- [ ] Please [download](https://cloud.h-da.de/s/7RxyR9jWDxJD7xS) the virtual machine ````ws234-rechnernetze-v01.ova```` for the lab before coming to your particular lab appointment!
 - [ ] Install the [latest version](https://www.virtualbox.org/) (by now 7.0.10) form virtualbox.org and follow the installation instructions to install virtualbox on your computer.
 - [ ] Import the ````ws234-rechnernetze-v01.ova```` virtual machine to virtualbox
 - [ ] Start the virtual machine
@@ -26,6 +26,20 @@ Please check if your personal computer:
   - [ ] 0-LabTasks.md (this is the text you are currently using)
   - [ ] attach-clab.sh
   - [ ] clab-rn-0-lab.yml
+     
+# Tasks for the Lab Appointment
+
+First of all, please bring your latop to the lab. If your laptop is not suitable or you do not have a laptop, please bring your access information for your virtual machine along with you. 
+
+## Excercise 1: Getting Started
+
+- [ ] Boot the virtual machine, login to it, and change to the **0-lab** directory
+- [ ] start the containerlab environment with this command ````XXX  ```` and see if it as started without any error
+- [ ] execute the shell script ````./attach-clab.sh ````
+- [ ] Ask the lab lecturer to check with you if everything is ready to go for the next exercises
+
+## Exercise 2: Using the virtalized Lab Environment
+
   
 
 
