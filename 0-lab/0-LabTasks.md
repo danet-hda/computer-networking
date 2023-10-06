@@ -42,7 +42,9 @@ First of all, please bring your latop to the lab. If your laptop is not suitable
 - [ ] If everything is ok you can run ````sudo containerlab destroy  -t clab-rn-0-lab.yml````
   - [ ] This command tears the virtual network down
 
-## Exercise 2: Using the virtalized Lab Environment
+## Exercise 2: Using the virtualized Lab Environment
+
+Configure IP and Netmask on Host00 and corresponding interface of router00. Find out what the corresponding interface in router00 is and note it down. Run a ping command between the two IPs. Capture the traffic between both entities, i.e., host00 and router00 What are the MAC-Adresses of the used interfaces? 
 
   
 
