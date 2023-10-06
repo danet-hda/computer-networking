@@ -12,12 +12,20 @@ Please check if your personal computer:
 
 *In case this is not the case, please contact your lecturer well before your lab appointment!*
 
-# Tasks to do
+# Prepation Tasks to Do before getting to the Lab
 
 - [ ] Please [download]([url](https://cloud.h-da.de/s/7RxyR9jWDxJD7xS)https://cloud.h-da.de/s/7RxyR9jWDxJD7xS) the virtual machine ````ws234-rechnernetze-v01.ova```` for the lab before coming to your particular lab appointment!
 - [ ] Install the [latest version](https://www.virtualbox.org/) (by now 7.0.10) form virtualbox.org and follow the installation instructions to install virtualbox on your computer.
 - [ ] Import the ````ws234-rechnernetze-v01.ova```` virtual machine to virtualbox
 - [ ] Start the virtual machine
-- [ ] Check if it is successfully started by trying to login from your preferred command line
+- [ ] Check if it is successfully started by trying to login into the **lab-vm** (username is ````networks```` and password is ````rn2023````) from your preferred command line with this command ````ssh networks@127.0.0.1 -p 2222````
+- [ ] stay logged into the **lab-vm** and
+  - [ ] clone the git repository for this lab with this command ````git clone https://github.com/danet-hda/computer-networking.git ````
+  - [ ] switch to the branch for this semester **23-24-wintersemester** with this command ````git checkout 23-24-wintersemester````
+- [ ] check if you have these files in the directory **computer-networking/0-lab** just cloned
+  - [ ] 0-LabTasks.md (this is the text you are currently using)
+  - [ ] attach-clab.sh
+  - [ ] clab-rn-0-lab.yml
+  
 
 
