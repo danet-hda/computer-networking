@@ -39,6 +39,7 @@ First of all, please bring your latop to the lab. If your laptop is not suitable
 - [ ] Ask the lab lecturer to check with you if everything is ready to go for the next exercises
 - [ ] execute the shell script ````./attach-clab.sh ````
   - [ ] This command starts virtual terminals with the tmux tool allowing you to access the hosts and the router in the lab setup
+  - [ ] Checkout the description for tmux [here](tmux-info.md) 
 - [ ] If everything is ok you can run ````sudo containerlab destroy  -t clab-rn-0-lab.yml````
   - [ ] This command tears the virtual network down
 
