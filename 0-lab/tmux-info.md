@@ -10,11 +10,20 @@ There are also other tools offering terminal multiplexing, but we use tmux in th
 
 In order to start a tmux session, assuming tmux is already installed, just type *tmux* into your terminal. In the lab, we will typically provide a pre-configured script for tmux, that sets multiple virtual terminals for our usage. 
 
-After this step tmux will just appear as a single virtual terminal. You can enter the key combination *CTRL-D* to leave the virtual terminal and to keep it running in the background. 
+After this step tmux will just appear as a single virtual terminal. You can enter the key combination ```CTRL-b``` and ```d``` to leave the virtual terminal and to keep it running in the background. 
 
 In order:
-- to list  what tmux sessions are available with the command *tmux list-sessions*
-- to attach to a running session use *tmux attach -t <session-name>*
+- to list  what tmux sessions are available with the command ```tmux list-sessions```
+- to attach to a running session use ```tmux attach -t <session-name>```
+- to close a pane use ```CTRL-d```
 
+You can create virtual terminal panes by using this command ```CTRL-b``` and depending on how to split:
+- ```"```for a horizontal split of the current pane
+- ```%```for a vertical split of the current pane
+
+# Good to Know
+
+If you run a tmux session and your ssh connection breaks down: no worry. 
+Reconnect to the host and attach again to the tmux session
 
 
