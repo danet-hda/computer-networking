@@ -73,7 +73,7 @@ Configure the interface e1-1 on:
 - router00: the IP address to ```10.1.1.254``` and the netmask to ```255.255.255.0```
 - host01: do not configure anything here.
 
-Check if you did the configuration correctly by using the ```ping <ip-address>``` command:
+Check if you did the configuration correctly by using the ```ping <ip-address>``` command on *host00*:
 - ```ping 10.1.1.1```
 - ```ping 10.1.1.254```
 
