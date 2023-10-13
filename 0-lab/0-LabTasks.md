@@ -56,19 +56,26 @@ All data, including any configuration, you have made in the containerlab contain
 
 In this exercise you will configure your first IP addresses to your setup and run a simple test to see if everything is configured correctly. Please check that your containerlab setting from exercise 1 is up and running. Use the ````./attach-clab.sh ```` to get to the shell prompts of the containerlab setting. 
 
-You will use the ```ifconfig``` command to configure the IP address:  ```ifconfig <interfacename> <ip-adress> netmask <netmask>```. 
+You will use the ```ifconfig``` command to configure the IP address:  ```ifconfig <interfacename> <ip-address> netmask <netmask>```. 
 
 First of all, determine the interfaces available in *host00* and *router00* by listing all interfaces with this command ```ifconfig```. You will see at least these interfaces:
 - e1-1
 - eth0
 - l0
 
+For each of the interfaces not the following information:
+- *Link encap*
+- *HWaddr*
+- *inet addr*
+
 Configure the interface e1-1 on:
 - host00: the IP address to ```10.1.1.1``` and the netmask to ```255.255.255.0```
 - router00: the IP address to ```10.1.1.254``` and the netmask to ```255.255.255.0```
-- host01: do not configure anything here. 
+- host01: do not configure anything here.
 
-Configure IP and Netmask on Host00 and corresponding interface of router00. Find out what the corresponding interface in router00 is and note it down. Run a ping command between the two IPs. Capture the traffic between both entities, i.e., host00 and router00 What are the MAC-Adresses of the used interfaces? 
+Check if you did the configuration correctly by using the ```ping <ip-address>``` command:
+- ```ping 10.1.1.1```
+- ```ping 10.1.1.254```
 
   
 
