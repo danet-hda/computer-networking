@@ -21,6 +21,7 @@ Please check if your personal computer:
 - [ ] Check if it is successfully started by trying to login into the **lab-vm** (username is ````networks```` and password is ````rn2023````) from your preferred command line with this command ````ssh networks@127.0.0.1 -p 2222````
 - [ ] stay logged into the **lab-vm** and
   - [ ] clone the git repository for this lab with this command ````git clone https://github.com/danet-hda/computer-networking.git ````
+  - [ ] change to the just checked out directory **computer-networking**
   - [ ] switch to the branch for this semester **23-24-wintersemester** with this command ````git checkout 23-24-wintersemester````
 - [ ] check if you have these files in the directory **computer-networking/0-lab** just cloned
   - [ ] 0-LabTasks.md (this is the text you are currently using)
