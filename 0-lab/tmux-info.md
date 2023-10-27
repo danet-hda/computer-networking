@@ -29,7 +29,7 @@ You can create virtual terminal panes by using this command ```CTRL-b``` and dep
 
 By default it is not possible to change between the different panes, i.e., the virtual terminals, by using your mouse. 
 
-You will need to navigate by ```CTRL-d``` and
+You will need to navigate by ```CTRL-b``` and
 - *arrow up* on your keyboard to move to the pane above your current active pane
 - *arrow down* on your keyboard to move to the pane below your current active pane
 - *arrow left* on your keyboard to move to the pane left your current active pane
