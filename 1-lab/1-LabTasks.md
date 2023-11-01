@@ -40,7 +40,7 @@ You will implement and run a client server application that exchanges the data o
 
 ## Your UDP Client Server Application
 
-You write an application where the server constantly computes the result of this $A \ne b$ function $$ f(t) = sin(2t)$$
+You write an application where the server constantly computes the result of this function $f(t) = sin(2 \pi t)$
 
 ## Further Tasks to be completed before the Lab Appointment
 
