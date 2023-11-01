@@ -4,7 +4,7 @@ This lab has the goal to program an application that exchanges data over UDP dat
 
 ## Preparation before getting to your Lab Appointment
 
-Please re-use the settings from the 1st lab (0-lab) for this lab setup, i.e., same containerlab file und also the same IP adress configuration *host00* and *router00*. 
+Please re-use the settings from the 1st lab (0-lab) for this lab setup, i.e., same containerlab file und also the same IP address configuration *host00* and *router00*. 
 
 ### The Programing Language and Environment
 Pick one programming language of your choice, but check:
