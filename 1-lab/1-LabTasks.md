@@ -82,6 +82,12 @@ Further questions to be answered:
 Answer these questions 
 - Name at least one example of a client server application you are using in the Internet. Try to explain your answer.
 - Can the server contact the client without a request from the client? Explain your answer.
-- Imagine a web server that is serving clients, i.e., web browsers, on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information? 
+- Imagine a web server that is serving clients, i.e., web browsers, on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information?
+
+## Good to Know
+
+Testing of software that requires a network connection can be a hassle, as you are not only testing the application's code but also the communication across a potentially unreliable network. In order to simplify the network part, you can test on a single host, i.e., both client and server are running as instance on the same computer. 
+
+The can use the so-called node-local network interface, also called local loopback interface, e.g., sometimes the interfaces are called ````lo0````or ````lo```, with the local IP address of 127.0.0.1. 
 
 
