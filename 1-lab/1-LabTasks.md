@@ -1,4 +1,4 @@
-# 2nd Lab in Computer Networks
+# 2nd Lab in Computer Networks: UDP Sockets
 
 This lab has the goal to program an application that exchanges data over UDP datagrams. For this one end will take the role of the client and the other the role of the server. 
 
@@ -20,4 +20,22 @@ Further, in order to improve this lab task for further students, you may propose
 For your development environment: Use the one you are used to or select one. 
 
 You can use a relative simple environment and upload the compiled code via scp into the docker containers in the containerlab. 
+
+### Programming
+
+You will need to start the programming before getting to the lab appointment. In the best case, you are done with programming and you can present your running program. However, in case you are stuck or you find an error that you cannot fix on your own, i.e., including looking for solutions in books, search engines etc, you can ask for guidance in the lab exercise. 
+
+## Client Server Principle
+
+There are different communication patterns used in data networks. The most prevailing one is the so-called *client server principle*:
+
+- one entity is the *server*: it offers some kind of service, e.g., computing the results of a mathematical function, that can be asked for.
+- Asking a server is done by:
+  -  sending a request to the server,
+  -  the server processing the requests, e.g., computing the result of a mathematical function,
+  -  and the server sending back the result in a response (sometimes also named reply).
+- the entity sending requests is the *client*: it needs a service offered by the server and is asking the server by sending a request to the server and waiting for the response.
+
+You will implement and run a client server application that exchanges the data over the network by means of the User Datagram Protocol (UDP). 
+
 
