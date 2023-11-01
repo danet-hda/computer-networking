@@ -82,6 +82,6 @@ Further questions to be answered:
 Answer these questions 
 - Name at least one example of a client server application you are using in the Internet. Try to explain your answer.
 - Can the server contact the client without a request from the client? Explain your answer.
-- Imagine a web server that is service clients, i.e., web browsers on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information? 
+- Imagine a web server that is serving clients, i.e., web browsers, on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information? 
 
 
