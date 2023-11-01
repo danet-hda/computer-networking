@@ -55,14 +55,31 @@ Typically one has to specify these parameters when creating a socket and binding
 - IPv4 address to bind to: 0.0.0.0 (that is the any IPv4 address (INADDR_ANY ), if you are good to take whatever address or addresses are available)
 - UDP port number: use the port number 55055
 
+**Placement of the server**: please "install" the server part on **router00**. 
+
 ### Client Settings
 
 Use the same settings as for the server, except that you set the UDP port number to the value of 0 (zero). Selecting the port number of 0 instructs the operating system to use some available port number, i.e., a one that is not already used by another process. 
 
+**Placement of the client**: please "install" the client part on **host00**. 
+
+## Tasks for the Lab Appointment
+
+Note: you can test these of course already before getting to the lab!
+
+Questions to be answered before running the next steps:
+- Can the client reach the server generally? This can be tested by sending a ping from **host00** to **router00**.
+- Is the server started and is it running without any error message?
+- What is the socket address of the server?
+- How can the client know and use the socket address of the server?
+- Can you start the client without any error message?
+
+Further questions to be answered: 
+- Try to start two instances of your server. Will the second instance start without an error? Document what you will find.
+
 ## Further Tasks to be completed before the Lab Appointment
 
-Answer these questions
-- Try to start two instances of your server. Will the second instance start without an error? Document what you will find. 
+Answer these questions 
 - Name at least one example of a client server application you are using in the Internet. Try to explain your answer.
 - Can the server contact the client without a request from the client? Explain your answer.
 - Imagine a web server that is service clients, i.e., web browsers on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information? 
