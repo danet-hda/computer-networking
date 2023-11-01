@@ -38,6 +38,10 @@ There are different communication patterns used in data networks. The most preva
 
 You will implement and run a client server application that exchanges the data over the network by means of the User Datagram Protocol (UDP). 
 
+## Your UDP Client Server Application
+
+You write an application where the server constantly computes the result of this $A \ne b$ function $$ f(t) = sin(2t)$$
+
 ## Further Tasks to be completed before the Lab Appointment
 
 Answer these questions
