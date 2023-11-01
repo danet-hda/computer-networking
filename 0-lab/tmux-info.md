@@ -10,7 +10,7 @@ There are also other tools offering terminal multiplexing, but we use tmux in th
 
 In order to start a tmux session, assuming tmux is already installed, just type *tmux* into your terminal. In the lab, we will typically provide a pre-configured script for tmux, that sets multiple virtual terminals for our usage. 
 
-After this step tmux will just appear as a single virtual terminal. You can enter the key combination ```CTRL-b``` and ```d``` to leave the virtual terminal and to keep it running in the background. 
+After this step tmux will just appear as a single virtual terminal. You can enter the key combination ```CTRL-b```, release it, and press```d``` afterwards to leave the virtual terminal and to keep it running in the background. 
 
 ## Session Handling
 
@@ -29,7 +29,7 @@ You can create virtual terminal panes by using this command ```CTRL-b``` and dep
 
 By default it is not possible to change between the different panes, i.e., the virtual terminals, by using your mouse. 
 
-You will need to navigate by ```CTRL-b``` and
+You will need to navigate by entering ```CTRL-b```, release it, and
 - *arrow up* on your keyboard to move to the pane above your current active pane
 - *arrow down* on your keyboard to move to the pane below your current active pane
 - *arrow left* on your keyboard to move to the pane left your current active pane
