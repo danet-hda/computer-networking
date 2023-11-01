@@ -8,9 +8,9 @@ Please re-use the settings from the 1st lab (0-lab) for this lab setup, i.e., sa
 
 ### The Programing Language and Environment
 Pick one programming language of your choice, but check:
-- if there is a socket application programming interface (API) available
-- that this API offers the functions shown and discussed in the lecture, e.g., ````socket()````, ````read()````
-- that you either compile this program outside the docker containers, e.g., on a linux system such as the virtual machine
+- if there is a socket application programming interface (API) available;
+- that this API offers the functions shown and discussed in the lecture, e.g., ````socket()````, ````read()````;
+- that you either compile this program outside the docker containers, e.g., on a linux system or directly in the virtual machine;
 - and that anything that is required to compile the program is actual setup correctly.
 
 In case you need help or have questions, please feel free to ask. A tip: typically each programming language has installations procedures documented on their web page or in their documentation. For instance, for the *go* language you can find it [here](https://go.dev/doc/install).
