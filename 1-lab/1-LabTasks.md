@@ -57,7 +57,7 @@ Typically one has to specify these parameters when creating a socket and binding
 
 ### Client Settings
 
-Use the same settings as for the server, expect that you set the UDP port number to the value of 0 (zero). Selecting the port number of 0 instructs the operating system to use some available port number, i.e., a one that is not already used by another process. 
+Use the same settings as for the server, except that you set the UDP port number to the value of 0 (zero). Selecting the port number of 0 instructs the operating system to use some available port number, i.e., a one that is not already used by another process. 
 
 ## Further Tasks to be completed before the Lab Appointment
 
