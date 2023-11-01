@@ -90,6 +90,6 @@ Further questions to be answered:
 
 Testing of software that requires a network connection can be a hassle, as you are not only testing the application's code but also the communication across a potentially unreliable network. In order to simplify the network part, you can test on a single host, i.e., both client and server are running as instance on the same computer. 
 
-You can use the so-called node-local network interface, also called local loopback interface, e.g., sometimes the interfaces are called ````lo0````or ````lo```, with the local IP address of 127.0.0.1. 
+You can use the so-called node-local network interface, also called local loopback interface, e.g., sometimes the interfaces are called ````lo0```` or ````lo````, with the local IP address of 127.0.0.1. 
 
 
