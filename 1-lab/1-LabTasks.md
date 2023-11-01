@@ -84,7 +84,9 @@ Questions to be answered before running the next steps:
 Further questions to be answered: 
 - Try to start two instances of your server. Will the second instance start without an error? Document what you will find.
 - How often has the client to request $f(t)$ form the server to get all values computed over the course of the time? Of course, only form the first time when the client starts requesting the results from the server. Justify your answer. 
-- Can the client know to have received all computed results? 
+- Can the client know to have received all computed results?
+- What is missing in the task description, but is actually needed for the implementation and the exchange of data between client and server?
+- Could two persons, with this information given here, that cannot talk to each other implement a working client server application with this information here? 
 
 ## Good to Know
 
