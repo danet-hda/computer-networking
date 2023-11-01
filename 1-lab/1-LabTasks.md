@@ -42,11 +42,16 @@ You will implement and run a client server application that exchanges the data o
 
 You write an application where the server constantly computes the result of this function $f(t) = sin(2 \pi t)$, whereas $t$ is the time in seconds. The client can send a request and the server will receive this request at $t_0$. The server will return the result of $f(t_0)$ to the client and wait for further requests. The client will print the time and the received result as text output. 
 
+The server must print always this information:
+- the time and client socket for which a request has been received
+- the time $t_0$ and $f(t_0)$ that will be sent back to the client
+- the time when the response was sent back to the client
+
 ### Server Settings
 
 Typically one has to specify these parameters when creating a socket and binding the socket to a specific IP address and port number:
 - the address family to be used: use AF_INET (not AF_INET6!). This stands for Internet Protocol Version 4.
-- transport protocol: UDP (sometimes this called differntly, please read carefully)
+- transport protocol: UDP (sometimes this called differently, please read carefully)
 - IPv4 address to bind to: 0.0.0.0 (that is the any IPv4 address (INADDR_ANY ), if you are good to take whatever address or addresses are available)
 - UDP port number: use the port number 55055
 
