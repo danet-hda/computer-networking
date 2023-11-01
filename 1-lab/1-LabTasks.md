@@ -2,7 +2,7 @@
 
 This lab has the goal to program an application that exchanges data over UDP datagrams. For this one end will take the role of the client and the other the role of the server. 
 
-## Preparation before getting to you Lap Appointment
+## Preparation before getting to your Lab Appointment
 
 Please re-use the settings from the 1st lab (0-lab) for this lab setup, i.e., same containerlab file etc. 
 
