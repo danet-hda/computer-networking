@@ -25,6 +25,13 @@ You can use a relative simple environment and upload the compiled code via scp i
 
 You will need to start the programming before getting to the lab appointment. In the best case, you are done with programming and you can present your running program. However, in case you are stuck or you find an error that you cannot fix on your own, i.e., including looking for solutions in books, search engines etc, you can ask for guidance in the lab exercise. 
 
+### Tasks to be completed before the Lab Appointment
+
+Answer these questions 
+- Name at least one example of a client server application you are using in the Internet. Try to explain your answer.
+- Can the server contact the client without a request from the client? Explain your answer.
+- Imagine a web server that is serving clients, i.e., web browsers, on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information?
+
 ## Client Server Principle
 
 There are different communication patterns used in data networks. The most prevailing one is the so-called *client server principle*:
@@ -76,13 +83,6 @@ Questions to be answered before running the next steps:
 
 Further questions to be answered: 
 - Try to start two instances of your server. Will the second instance start without an error? Document what you will find.
-
-## Further Tasks to be completed before the Lab Appointment
-
-Answer these questions 
-- Name at least one example of a client server application you are using in the Internet. Try to explain your answer.
-- Can the server contact the client without a request from the client? Explain your answer.
-- Imagine a web server that is serving clients, i.e., web browsers, on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information?
 
 ## Good to Know
 
