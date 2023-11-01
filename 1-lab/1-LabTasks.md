@@ -47,11 +47,11 @@ You will implement and run a client server application that exchanges the data o
 
 ## Your UDP Client Server Application
 
-You write an application where the server constantly computes the result of this function $f(t) = sin(2 \pi t)$, whereas $t$ is the time in seconds. The client can send a request and the server will receive this request at $t_0$. The server will return the result of $f(t_0)$ to the client and wait for further requests. The client will print the time and the received result as text output. 
+You write an application where the server computes the result of this function $f(t) = sin(2 \pi t)$, whereas $t$ is the time in seconds since the start of the server. The client can send a request and the server will receive this request at $t_i$. The server will compute and return the result of $f(t_i)$ to the client and wait for further requests. The client will print the time and the received result as text output. 
 
 The server must print always this information:
 - the time and client socket for which a request has been received
-- the time $t_0$ and $f(t_0)$ that will be sent back to the client
+- the time $t_0$ and $f(t_i)$ that will be sent back to the client
 - the time when the response was sent back to the client
 
 ### Server Settings
@@ -83,7 +83,7 @@ Questions to be answered before running the next steps:
 
 Further questions to be answered: 
 - Try to start two instances of your server. Will the second instance start without an error? Document what you will find.
-- How often has the client to request $f(t)$ form the server to get all values computed over the course of the time? Of course, only form the first time when the client starts requesting the results from the server. Justify your answer. 
+- How often has the client to request $f(t)$ from the server to get all values computed over the course of the time? Of course, only form the first time when the client starts requesting the results from the server. Justify your answer. 
 - Can the client know to have received all computed results?
 - What is missing in the task description, but is actually needed for the implementation and the exchange of data between client and server?
 - Could two persons, with this information given here, that cannot talk to each other implement a working client server application with this information here? 
