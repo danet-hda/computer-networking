@@ -40,11 +40,24 @@ You will implement and run a client server application that exchanges the data o
 
 ## Your UDP Client Server Application
 
-You write an application where the server constantly computes the result of this function $f(t) = sin(2 \pi t)$
+You write an application where the server constantly computes the result of this function $f(t) = sin(2 \pi t)$, whereas $t$ is the time in seconds. The client can send a request and the server will receive this request at $t_0$. The server will return the result of $f(t_0)$ to the client and wait for further requests. The client will print the time and the received result as text output. 
+
+### Server Settings
+
+Typically one has to specify these parameters when creating a socket and binding the socket to a specific IP address and port number:
+- the address family to be used: use AF_INET (not AF_INET6!). This stands for Internet Protocol Version 4.
+- transport protocol: UDP (sometimes this called differntly, please read carefully)
+- IPv4 address to bind to: 0.0.0.0 (that is the any IPv4 address (INADDR_ANY ), if you are good to take whatever address or addresses are available)
+- UDP port number: use the port number 55055
+
+### Client Settings
+
+Use the same settings as for the server, expect that you set the UDP port number to the value of 0 (zero). Selecting the port number of 0 instructs the operating system to use some available port number, i.e., a one that is not already used by another process. 
 
 ## Further Tasks to be completed before the Lab Appointment
 
 Answer these questions
+- Try to start two instances of your server. Will the second instance start without an error? Document what you will find. 
 - Name at least one example of a client server application you are using in the Internet. Try to explain your answer.
 - Can the server contact the client without a request from the client? Explain your answer.
 - Imagine a web server that is service clients, i.e., web browsers on other computers, with information from a database. The database is located on a different server. What role takes the web server application when it is asking the database server for information? 
