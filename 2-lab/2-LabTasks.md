@@ -12,6 +12,10 @@ Both use a different protocol above the link layer address for
 
 Please re-use the settings from the 1st lab (0-lab) for this lab setup, i.e., same containerlab file und also the same IP address configuration *host00* and *router00*. 
 
+One task will be the recording of the network traffic between two nodes. This is typically done, either with the tcpdump oder the wireshark tools. tcpdump is available by default on most Unix systems (e.g., Linux or FreeBSD), while wireshark is a graphical tool that has to be installed. 
+
+Read as preparation about how to capture the network traffic in a containerlab setting this article: https://containerlab.dev/manual/wireshark/
+
 ## Tasks for the Lab Appointment
 
 
