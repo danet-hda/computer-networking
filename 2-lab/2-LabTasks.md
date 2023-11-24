@@ -8,6 +8,12 @@ Both use a different protocol above the link layer address for
 - IPv4 is the Adress Resolution Protocol (ARP)
 - IPv6 is the Neighbor Discovery Protocol (NDP)
 
+You will need to read before the lab, but no other preparation is required. 
+
+The lab itself consists out of:
+- the measurement part on-site
+- and a written report -- details below.
+
 ## Preparation before getting to your Lab Appointment
 
 Please re-use the settings from the 1st lab (0-lab) for this lab setup, i.e., same containerlab file. 
@@ -20,6 +26,8 @@ Read as preparation:
 
 ## Tasks for the Lab Appointment
 
+Note well: **Do not run any ping or other programm that sends traffic between the network elements before starting the actual lab questions!**
+
 ### "Preflight" preparations 
 Configure the interface e1-1 on **host00** and **router00**:
 - **host00**: the IP address to ```10.1.1.1``` and the netmask to ```255.255.255.0```
@@ -30,7 +38,7 @@ Please check that these interfaces do have an IPv6 address automatically configu
 - **router00**/e1-2
 
 
-
+### The Tasks for the on-site Lab
 
 ## Good to Know
 
