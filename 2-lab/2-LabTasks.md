@@ -44,13 +44,28 @@ Record the network traffic with the ```tcpdump``` program between:
 
 Please do the recording not from within the containers, but from the within the virtual machine!
 
-#### ARP
+#### IPv4 / ARP
 
 For ARP please do the following steps, while capturing the network traffic:
 - ensure that the ARP cache is empty **host00**
 - On **host00** run ```ping 10.1.1.1```
 - On **host00** run ```ping 10.1.1.254```
-- Note the content of the ARP cache
+- Note now he content of the ARP cache
+- Stop capturing
+- Safe the file with the recording of the network traffic, so that you can use it later on for the lab report
+- You can see, if you can open the file in wireshark, just to be sure that you have a captured.
+
+### IPv6 / NDP
+
+For IP6 you do not need to manually configure IPv6 addresses, if you want to communicate with a node on the same link. IPv6 introduced the so-called link local IPv6 addresses. These addresses are automatically created when an interface is IPv6-enabled. 
+
+Please find out these IPv6 addresses for **router00's** e1-2 and **host01's** e1-1. 
+
+Follow these steps, while ensuring that you are capturing the network traffic between **router00** and **host01**:
+- ensure that the NDP cache is empty at **host01**
+- On **host01** run ```ping6 <link-local-inet6-address-of-host01-e1-1>%e1-1```
+- On **host01** run ```ping6 <link-local-inet6-address-of-router00-e1-2>%e1-1```
+- Note now he content of the NDP cache
 - Stop capturing
 - Safe the file with the recording of the network traffic, so that you can use it later on for the lab report
 - You can see, if you can open the file in wireshark, just to be sure that you have a captured.
@@ -62,4 +77,10 @@ For ARP please do the following steps, while capturing the network traffic:
 Please read the containerlab [article](https://containerlab.dev/manual/wireshark/) for how to use tcpdump with containerlab.
 In order to write the recorded network traffic to a file, use ```tcpdump``` with the option ```-w <file-name> ```, e.g., ```tcpdump <otheroptions> -w <file-name>```. 
 
+### arp command
 
+One can use the ```arp``` command to see the ARP-cache of a specific host. Please use ```arp -na``` for this lab exercise.
+
+### ndp command
+
+One can use the ```XXX``` command to see the NDP-cache of a specific host. Please use ```CXY``` for this lab exercise.
