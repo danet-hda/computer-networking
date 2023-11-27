@@ -1,8 +1,31 @@
 # Notes on how to write a scientific Lab Report
 
-You will have to submit written reports for some the computer network labs. Please submit them as PDF. 
+You will have to submit written reports for some of the computer network labs. Please submit them as PDF. 
 
 The lab report must document the tasks during the work at the lab, answer the posed questions or tasks, document your findings, any open question or any unresolved issue. Any used literature, e.g., out of the preparation of the lab, must be cited as reference. 
+
+Please note that the description here states what is needed for a simplified scientifc report. 
+
+## Structure of such report
+
+Such a report can follow this structure:
+- Introduction
+- Related Work to know
+- Measurement Setup
+- Measurement Results
+- Discussion
+
+## Language
+
+You can write the report either in German or English, as you prefer. 
+
+In any case, please take care of proper writing :-) 
+
+## Use of Figures and Text
+
+You can use figures and text to discribe the lab setup and your findings. If you are using figures, please "use" them in the text, by referencing them and a (short) explanation or discussion in the text.
+
+For instance, if you have a network flow diagram you can give it a label, e.g., "Figure 1: ARP flow diagram" and say in your text "Figure 1 shows the network flow for ARP between host01 and router01.". 
 
 ## How to use references
 
