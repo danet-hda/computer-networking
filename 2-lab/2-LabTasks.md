@@ -72,7 +72,7 @@ Follow these steps, while ensuring that you are capturing the network traffic be
 
 ## Lab Report to be written
 
-<tbd>
+Before writing the report read the [notes](NotesLabReport.md) carefully and take them into considerations for your own report!
 
 ## Good to Know
 
