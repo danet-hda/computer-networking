@@ -79,8 +79,13 @@ In order to write the recorded network traffic to a file, use ```tcpdump``` with
 
 ### arp command
 
-One can use the ```arp``` command to see the ARP-cache of a specific host. Please use ```arp -na``` for this lab exercise.
+One can use the ```arp``` command to see the ARP-cache of a specific host. Please use ```arp -na``` for this lab exercise. You can also use the ``` ip -4 neighbor show```command.
+
+To clear the ARP cache use this: ```ip -4 -s -s neigh flush all```
 
 ### ndp command
 
-One can use the ```XXX``` command to see the NDP-cache of a specific host. Please use ```CXY``` for this lab exercise.
+One can use the ```ip``` command to see the NDP-cache of a specific host. 
+Please use:
+- ```ip -6 neighbor show`` to display the current NDP cache
+- ```ip -6 -s -s neigh flush all`` to clear the NDP cache
