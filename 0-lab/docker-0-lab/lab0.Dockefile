@@ -1,0 +1,6 @@
+FROM alpine:latest as lab0image 
+RUN apk -U upgrade 
+RUN apk add  iproute2
+RUN apk add  iputils-ping
+RUN apk add tcpdump 
+ENTRYPOINT ["/bin/ash"]

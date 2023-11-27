@@ -1,0 +1,70 @@
+# encoding: utf-8
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# Box / OS
+VERSION_CODENAME = 'jammy'
+ARCHITECTURE = '64'
+VAGRANT_BOX = 'ubuntu/' + VERSION_CODENAME + ARCHITECTURE
+# Memorable name for your
+VM_NAME = 'gosdn-vm'
+# VM User — 'vagrant' by default
+VM_USER = 'vagrant'
+
+Vagrant.configure(2) do |config|
+  # Vagrant box from Hashicorp
+  config.vm.box = VAGRANT_BOX
+  # Actual machine name
+  config.vm.hostname = VM_NAME
+  # Set VM name in Virtualbox
+  config.vm.provider "virtualbox" do |v|
+    v.name = VM_NAME
+    v.memory = 4096
+  end
+
+  #DHCP — comment this out if planning on using NAT instead
+  config.vm.network "private_network", type: "dhcp"
+
+  # Install git, go, docker, containerlab and download repositories
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get upgrade -y
+    apt-get install -y \
+    ca-certificates \
+    curl \
+    git \
+    gnupg \
+    make \
+    zip
+    apt-get autoremove -y
+    ####### installing go #######
+    wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
+    rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
+    rm go1.21.0.linux-amd64.tar.gz
+    echo 'export PATH=$PATH:/usr/local/go/bin' >> /home/vagrant/.profile
+    echo 'export GOPATH=$HOME/go' >> /home/vagrant/.profile
+    source /home/vagrant/.profile
+    ####### installing docker #######
+    install -m 0755 -d /etc/apt/keyrings
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    chmod a+r /etc/apt/keyrings/docker.gpg
+    echo \
+    "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+    tee /etc/apt/sources.list.d/docker.list > /dev/null
+    apt-get update
+    apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+    usermod -aG docker vagrant
+    ####### installing containerlab #######
+    bash -c "$(curl -sL https://get.containerlab.dev)"
+    ####### get gosdn repository #######
+    su - vagrant -c "git clone https://code.fbi.h-da.de/danet/gosdn.git"
+    cd gosdn
+    su - vagrant -c "git submodule update --init --recursive"
+    su - vagrant -c "cd gosdn && make build"
+    ####### get gnmi target repository #######
+    cd ..
+    su - vagrant -c "git clone --branch develop https://code.fbi.h-da.de/danet/gnmi-target.git"
+    su - vagrant -c "cd gnmi-target && docker build -f target.Dockerfile ."
+    su - vagrant -c "cd gnmi-target && make container"
+  SHELL
+end

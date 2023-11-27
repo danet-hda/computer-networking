@@ -1,0 +1,33 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US.UTF-8
+  identity:
+    hostname: networks
+    username: networks
+    password: $6$3ToKryv8sFdoYLBR$o9lYhFrzDjO0SQdaP4QfAnOhgFM/j6iXBLCT5SEQJm5cfTVn2SxeZsqCKS8kJUs.ONjsgKaZOtfkDOWp.JsG20
+    
+  keyboard:
+    layout: de
+  storage:
+    layout:
+      name: direct
+  ssh:
+    install-server: true
+    allow-pw: yes
+  drivers:
+    install: true
+  packages: 
+    - server^
+    - standard^
+    - make
+    - curl
+    - ca-certificates
+    - curl
+    - gnupg
+    - zip
+  timezone: Europe/Berlin
+  updates: security
+
+  late-commands:
+    - echo "networks ALL=(ALL:ALL) NOPASSWD:ALL" > /target/etc/sudoers.d/networks && chmod 0440 /target/etc/sudoers.d/networks
