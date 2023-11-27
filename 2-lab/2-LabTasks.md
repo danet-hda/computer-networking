@@ -74,6 +74,16 @@ Follow these steps, while ensuring that you are capturing the network traffic be
 
 Before writing the report read the [notes](NotesLabReport.md) carefully and take them into considerations for your own report!
 
+**The submission date for the report will be given in the moodle course!**
+
+The report must be written as a simplified scientific report and addressing these points:
+- Describe the setting of the system you are measuring, i.e., with text and a graphic showing the components involved in the measurement.
+- Describe what is needed to be abe to understand your lab experiment, e.g., which tools are being used, what measurements are being done and how.
+- Show you meausrement results as network flow diagram (as explained in the lecture) for each, ARP and NDP.
+- Discuss one major difference between ARP and NDP on the **link-layer**!
+- Document any of your questions or open issues.
+
+
 ## Good to Know
 
 ### ```tcpdump```
