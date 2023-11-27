@@ -70,20 +70,24 @@ Follow these steps, while ensuring that you are capturing the network traffic be
 - Safe the file with the recording of the network traffic, so that you can use it later on for the lab report
 - You can see, if you can open the file in wireshark, just to be sure that you have a captured.
 
+## Lab Report to be written
+
+<tbd>
+
 ## Good to Know
 
-### tcpdump
+### ```tcpdump```
 
 Please read the containerlab [article](https://containerlab.dev/manual/wireshark/) for how to use tcpdump with containerlab.
 In order to write the recorded network traffic to a file, use ```tcpdump``` with the option ```-w <file-name> ```, e.g., ```tcpdump <otheroptions> -w <file-name>```. 
 
-### arp command
+### ```arp``` command
 
 One can use the ```arp``` command to see the ARP-cache of a specific host. Please use ```arp -na``` for this lab exercise. You can also use the ``` ip -4 neighbor show```command.
 
 To clear the ARP cache use this: ```ip -4 -s -s neigh flush all```
 
-### ndp command
+### ```ndp``` command
 
 One can use the ```ip``` command to see the NDP-cache of a specific host. 
 Please use:
