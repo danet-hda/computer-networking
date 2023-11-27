@@ -26,8 +26,6 @@ Read as preparation:
 
 ## Tasks for the Lab Appointment
 
-Note well: **Do not run any ping or other programm that sends traffic between the network elements before starting the actual lab questions!**
-
 ### "Preflight" preparations 
 Configure the interface e1-1 on **host00** and **router00**:
 - **host00**: the IP address to ```10.1.1.1``` and the netmask to ```255.255.255.0```
@@ -40,5 +38,28 @@ Please check that these interfaces do have an IPv6 address automatically configu
 
 ### The Tasks for the on-site Lab
 
+Record the network traffic with the ```tcpdump``` program between:
+- **host00** und **router00** auf: bitte an **router00** Schnittstelle e1-1 
+- **host01** und **router00** auf: bitte an **router00** Schnittstelle e1-2
+
+Please do the recording not from within the containers, but from the within the virtual machine!
+
+#### ARP
+
+For ARP please do the following steps, while capturing the network traffic:
+- ensure that the ARP cache is empty **host00**
+- On **host00** run ```ping 10.1.1.1```
+- On **host00** run ```ping 10.1.1.254```
+- Note the content of the ARP cache
+- Stop capturing
+- Safe the file with the recording of the network traffic, so that you can use it later on for the lab report
+- You can see, if you can open the file in wireshark, just to be sure that you have a captured.
+
 ## Good to Know
+
+### tcpdump
+
+Please read the containerlab [article](https://containerlab.dev/manual/wireshark/) for how to use tcpdump with containerlab.
+In order to write the recorded network traffic to a file, use ```tcpdump``` with the option ```-w <file-name> ```, e.g., ```tcpdump <otheroptions> -w <file-name>```. 
+
 
