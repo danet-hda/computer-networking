@@ -39,10 +39,10 @@ Please check that these interfaces do have an IPv6 address automatically configu
 ### The Tasks for the on-site Lab
 
 Record the network traffic with the ```tcpdump``` program between:
-- **host00** und **router00** auf: bitte an **router00** Schnittstelle e1-1 
-- **host01** und **router00** auf: bitte an **router00** Schnittstelle e1-2
+- for **host00** and **router00**: please record on **router00** interface e1-1 
+- for **host01** and **router00**: please record on **router00** interface e1-2
 
-Please do the recording not from within the containers, but from the within the virtual machine!
+Please do the recording not from within the containers, but from within the virtual machine!
 
 #### IPv4 / ARP
 
@@ -50,7 +50,7 @@ For ARP please do the following steps, while capturing the network traffic:
 - ensure that the ARP cache is empty **host00**
 - On **host00** run ```ping 10.1.1.1```
 - On **host00** run ```ping 10.1.1.254```
-- Note now he content of the ARP cache
+- Note now the content of the ARP cache
 - Stop capturing
 - Safe the file with the recording of the network traffic, so that you can use it later on for the lab report
 - You can see, if you can open the file in wireshark, just to be sure that you have a captured.
@@ -65,10 +65,10 @@ Follow these steps, while ensuring that you are capturing the network traffic be
 - ensure that the NDP cache is empty at **host01**
 - On **host01** run ```ping6 <link-local-inet6-address-of-host01-e1-1>%e1-1```
 - On **host01** run ```ping6 <link-local-inet6-address-of-router00-e1-2>%e1-1```
-- Note now he content of the NDP cache
+- Note now the content of the NDP cache
 - Stop capturing
 - Safe the file with the recording of the network traffic, so that you can use it later on for the lab report
-- You can see, if you can open the file in wireshark, just to be sure that you have a captured.
+- You can see, if you can open the file in wireshark, just to be sure that you have a working capture file.
 
 ## Lab Report to be written
 
@@ -93,7 +93,7 @@ In order to write the recorded network traffic to a file, use ```tcpdump``` with
 
 ### ```arp``` command
 
-One can use the ```arp``` command to see the ARP-cache of a specific host. Please use ```arp -na``` for this lab exercise. You can also use the ``` ip -4 neighbor show```command.
+One can use the ```arp``` command to see the ARP-cache of a specific host. Please use ```arp -na``` for this lab exercise. You can also use the ``` ip -4 neighbor show``` command.
 
 To clear the ARP cache use this: ```ip -4 -s -s neigh flush all```
 
@@ -101,5 +101,5 @@ To clear the ARP cache use this: ```ip -4 -s -s neigh flush all```
 
 One can use the ```ip``` command to see the NDP-cache of a specific host. 
 Please use:
-- ```ip -6 neighbor show`` to display the current NDP cache
-- ```ip -6 -s -s neigh flush all`` to clear the NDP cache
+- ```ip -6 neighbor show``` to display the current NDP cache
+- ```ip -6 -s -s neigh flush all``` to clear the NDP cache
